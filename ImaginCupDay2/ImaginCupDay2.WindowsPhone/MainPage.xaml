@@ -1,0 +1,20 @@
+﻿<Page
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:ImaginCupDay2"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Maps="using:Windows.UI.Xaml.Controls.Maps"
+    x:Class="ImaginCupDay2.MainPage"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <StackPanel>
+        <TextBlock x:Name="latTbl" TextWrapping="Wrap" Text="TextBlock" FontSize="16" HorizontalAlignment="Center"/>
+        <TextBlock x:Name="longTbl" TextWrapping="Wrap" Text="TextBlock" HorizontalAlignment="Center" FontSize="16"/>
+        <Button x:Name="extMapBtn" Content="Open Bing Map" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="extMapBtn_Click"/>
+        <Maps:MapControl x:Name="myMap" Height="305" ZoomLevel="16"/>
+        <Button x:Name="routeBtn" Content="Get route" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Click="routeBtn_Click"/>
+        <StackPanel x:Name="reportField"/>
+    </StackPanel>
+</Page>
